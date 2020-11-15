@@ -58,7 +58,6 @@ libmm-vdec-inc          := $(LOCAL_PATH)/inc
 libmm-vdec-inc          += $(QCOM_MEDIA_ROOT)/mm-video-v4l2/vidc/common/inc
 libmm-vdec-inc          += $(QCOM_MEDIA_ROOT)/mm-core/inc
 libmm-vdec-inc          += $(QCOM_MEDIA_ROOT)/libplatformconfig
-libmm-vdec-inc          += $(TARGET_OUT_HEADERS)/qcom/display
 libmm-vdec-inc          += $(TARGET_OUT_HEADERS)/adreno
 libmm-vdec-inc          += $(QCOM_MEDIA_ROOT)/libc2dcolorconvert
 libmm-vdec-inc          += $(TARGET_OUT_HEADERS)/mm-video/SwVdec
@@ -100,6 +99,7 @@ LOCAL_VENDOR_MODULE             := true
 LOCAL_CFLAGS                    := $(libmm-vdec-def) -Werror
 
 LOCAL_HEADER_LIBRARIES := \
+        display_headers \
         media_plugin_headers \
         libnativebase_headers \
         libutils_headers \
@@ -145,6 +145,7 @@ LOCAL_VENDOR_MODULE           := true
 LOCAL_CFLAGS                  := $(libmm-vdec-def)
 
 LOCAL_HEADER_LIBRARIES := \
+        display_headers \
         media_plugin_headers \
         libnativebase_headers \
         libutils_headers \
