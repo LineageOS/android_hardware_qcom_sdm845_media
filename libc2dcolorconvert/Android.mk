@@ -15,7 +15,6 @@ LOCAL_HEADER_LIBRARIES := \
         libhardware_headers
 
 LOCAL_SHARED_LIBRARIES := liblog libdl
-LOCAL_HEADER_LIBRARIES := libhardware_headers
 
 LOCAL_MODULE_TAGS := optional
 

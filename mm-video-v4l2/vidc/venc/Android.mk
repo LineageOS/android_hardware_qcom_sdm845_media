@@ -107,8 +107,6 @@ LOCAL_SHARED_LIBRARIES    += libc2dcolorconvert
 # endif # ($(BOARD_USES_ADRENO), true)
 LOCAL_SHARED_LIBRARIES += libqdMetaData
 LOCAL_STATIC_LIBRARIES    := libOmxVidcCommon
-LOCAL_HEADER_LIBRARIES    := media_plugin_headers
-LOCAL_HEADER_LIBRARIES    += libhardware_headers
 
 LOCAL_SRC_FILES   := src/omx_video_base.cpp
 LOCAL_SRC_FILES   += src/omx_video_encoder.cpp
@@ -156,8 +154,6 @@ ifneq (,$(call is-board-platform-in-list2, $(TARGETS_THAT_SUPPORT_SW_VENC_ROTATI
 LOCAL_SHARED_LIBRARIES += libui
 LOCAL_SHARED_LIBRARIES += libutils
 endif
-
-LOCAL_HEADER_LIBRARIES    := media_plugin_headers
 
 # ifeq ($(BOARD_USES_ADRENO), true)
 LOCAL_SHARED_LIBRARIES    += libc2dcolorconvert
